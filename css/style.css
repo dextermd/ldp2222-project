@@ -10,3 +10,9 @@ body {
   font-size: 360px;
   line-height: 0.8;
 }
+
+@media screen and (max-width: 640px) {
+  .number_style {
+    font-size: 220px;
+  }
+}
