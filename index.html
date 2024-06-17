@@ -12,9 +12,54 @@
 </head>
 
 <body>
+
+    <nav class="sticky top-0 z-20 lg:hidden flex flex-col justify-between bg-white">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="./Images/Logo_mob.svg" alt="Logo" class="h-16">
+            </div>
+
+            <div id="burger_menu" class="mr-2">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.16602 10.4165V14.5832H45.8327V10.4165H4.16602ZM4.16602 22.9165V27.0832H45.8327V22.9165H4.16602ZM4.16602 35.4165V39.5832H45.8327V35.4165H4.16602Z"
+                        fill="black" />
+                </svg>
+            </div>
+
+        </div>
+
+        <ul id="menu_items" class="hidden flex flex-col font-medium py-2">
+            <li class="flex gap-2">
+                <div class="text-sm">1</div>
+                <a href="#about" class="hover:text-gray-700">About</a>
+            </li>
+            <li class="flex gap-2">
+                <div class="text-sm">2</div>
+                <a href="#services" class="hover:text-gray-700">Services</a>
+            </li>
+            <li class="flex gap-2">
+                <div class="text-sm">3</div>
+                <a href="#projects" class="hover:text-gray-700">Projects</a>
+            </li>
+            <li class="flex gap-2">
+                <div class="text-sm">4</div>
+                <a href="#team" class="hover:text-gray-700">Team</a>
+            </li>
+            <li class="flex gap-2">
+                <div class="text-sm">5</div>
+                <a href="#blog" class="hover:text-gray-700">Blog</a>
+            </li>
+        </ul>
+        <hr class="lg:hidden border border-black">
+    </nav>
+
+
+
+
     <div class="container mx-auto w-11/12 2xl:w-full">
 
-        <nav class="flex items-center justify-between bg-white px-[150px]">
+        <nav class="hidden lg:flex flex items-center justify-between bg-white px-[150px]">
             <div class="flex items-center">
                 <img src="./Images/Logo2.png" alt="Logo" class="h-20">
             </div>
@@ -41,11 +86,12 @@
                 </li>
             </ul>
         </nav>
-        
-        <hr class="border border-black mt-6">
 
-        
-        <div class="h-[450px] relative custom-background mx-[50px] mt-[150px] absolute  h-1/2 bg-gray-100 opacity-80" >
+
+        <hr class="hidden lg:block border border-black mt-6">
+
+
+        <div class="h-[450px] relative custom-background mx-[50px] mt-[150px] absolute  h-1/2 bg-gray-100 opacity-80">
             <div class="bg-gray bg-opacity-10"></div>
             <div class="relative z-10 flex flex-col items-start justify-start h-full p-8 md:p-5 lg:p-6 ml-[100px]">
                 <p class="text-black text-sm uppercase tracking-wider mb-2 mt-[-140px] ml-[470px]">Since 1975 —</p>
@@ -55,11 +101,16 @@
                 <div class="absolute top-0 right-0 p-8">
                     <div class="pb-5">
                         <div class="group flex border-4 border-black w-fit font-semibold mt-[-140px]">
-                            <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact Us</button>
+                            <button
+                                class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact
+                                Us</button>
                             <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
-                                <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7 7H17V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg class="stroke-black group-hover:stroke-white" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7 7H17V17" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </div>
                         </div>
@@ -67,67 +118,78 @@
                     <div class="flex space-x-4 pt-3 pl-10">
                         <a href="#" class="text-black hover:text-gray-700 transition duration-300">
                             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 2.04c-5.522 0-10 4.477-10 10 0 5.07 3.74 9.29 8.49 9.93v-7.02h-2.56v-2.91h2.56v-2.2c0-2.54 1.52-3.93 3.83-3.93 1.11 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.64.78-1.64 1.58v1.88h2.78l-.44 2.91h-2.34v7.02c4.75-.64 8.5-4.86 8.5-9.93 0-5.523-4.478-10-10-10z"></path>
+                                <path
+                                    d="M12 2.04c-5.522 0-10 4.477-10 10 0 5.07 3.74 9.29 8.49 9.93v-7.02h-2.56v-2.91h2.56v-2.2c0-2.54 1.52-3.93 3.83-3.93 1.11 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.64.78-1.64 1.58v1.88h2.78l-.44 2.91h-2.34v7.02c4.75-.64 8.5-4.86 8.5-9.93 0-5.523-4.478-10-10-10z">
+                                </path>
                             </svg>
                         </a>
                         <a href="#" class="text-black hover:text-gray-700 transition duration-300">
                             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path d="M23.94 4.56c-.88.39-1.83.64-2.83.76 1.02-.61 1.81-1.57 2.18-2.72-.96.57-2.02.99-3.15 1.22-.91-.96-2.21-1.56-3.65-1.56-2.77 0-5.01 2.24-5.01 5.01 0 .39.04.76.13 1.12-4.16-.21-7.85-2.2-10.31-5.22-.43.75-.67 1.61-.67 2.54 0 1.75.89 3.29 2.24 4.19-.82-.03-1.59-.25-2.27-.62v.06c0 2.45 1.74 4.5 4.04 4.96-.42.11-.85.17-1.3.17-.32 0-.63-.03-.93-.09.63 1.97 2.48 3.41 4.67 3.45-1.71 1.34-3.86 2.14-6.2 2.14-.4 0-.79-.02-1.18-.07 2.21 1.41 4.84 2.23 7.66 2.23 9.19 0 14.22-7.61 14.22-14.22 0-.22 0-.44-.01-.66.98-.71 1.83-1.6 2.5-2.61z"></path>
+                                <path
+                                    d="M23.94 4.56c-.88.39-1.83.64-2.83.76 1.02-.61 1.81-1.57 2.18-2.72-.96.57-2.02.99-3.15 1.22-.91-.96-2.21-1.56-3.65-1.56-2.77 0-5.01 2.24-5.01 5.01 0 .39.04.76.13 1.12-4.16-.21-7.85-2.2-10.31-5.22-.43.75-.67 1.61-.67 2.54 0 1.75.89 3.29 2.24 4.19-.82-.03-1.59-.25-2.27-.62v.06c0 2.45 1.74 4.5 4.04 4.96-.42.11-.85.17-1.3.17-.32 0-.63-.03-.93-.09.63 1.97 2.48 3.41 4.67 3.45-1.71 1.34-3.86 2.14-6.2 2.14-.4 0-.79-.02-1.18-.07 2.21 1.41 4.84 2.23 7.66 2.23 9.19 0 14.22-7.61 14.22-14.22 0-.22 0-.44-.01-.66.98-.71 1.83-1.6 2.5-2.61z">
+                                </path>
                             </svg>
                         </a>
                         <a href="#" class="text-black hover:text-gray-700 transition duration-300">
                             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path d="M21.54 2.46c-.92-.92-2.15-1.46-3.44-1.46h-12.2c-1.29 0-2.52.54-3.44 1.46-.92.92-1.46 2.15-1.46 3.44v12.2c0 1.29.54 2.52 1.46 3.44.92.92 2.15 1.46 3.44 1.46h12.2c1.29 0 2.52-.54 3.44-1.46.92-.92 1.46-2.15 1.46-3.44v-12.2c0-1.29-.54-2.52-1.46-3.44zm-12.88 16.17h-3.47v-10.58h3.47v10.58zm-1.74-12.05c-1.11 0-2.01-.9-2.01-2.01s.9-2.01 2.01-2.01 2.01.9 2.01 2.01-.9 2.01-2.01 2.01zm14.1 12.05h-3.47v-5.33c0-1.27-.03-2.9-1.76-2.9-1.76 0-2.03 1.37-2.03 2.8v5.43h-3.47v-10.58h3.33v1.45h.05c.46-.87 1.6-1.79 3.29-1.79 3.52 0 4.17 2.32 4.17 5.34v6.58z"></path>
+                                <path
+                                    d="M21.54 2.46c-.92-.92-2.15-1.46-3.44-1.46h-12.2c-1.29 0-2.52.54-3.44 1.46-.92.92-1.46 2.15-1.46 3.44v12.2c0 1.29.54 2.52 1.46 3.44.92.92 2.15 1.46 3.44 1.46h12.2c1.29 0 2.52-.54 3.44-1.46.92-.92 1.46-2.15 1.46-3.44v-12.2c0-1.29-.54-2.52-1.46-3.44zm-12.88 16.17h-3.47v-10.58h3.47v10.58zm-1.74-12.05c-1.11 0-2.01-.9-2.01-2.01s.9-2.01 2.01-2.01 2.01.9 2.01 2.01-.9 2.01-2.01 2.01zm14.1 12.05h-3.47v-5.33c0-1.27-.03-2.9-1.76-2.9-1.76 0-2.03 1.37-2.03 2.8v5.43h-3.47v-10.58h3.33v1.45h.05c.46-.87 1.6-1.79 3.29-1.79 3.52 0 4.17 2.32 4.17 5.34v6.58z">
+                                </path>
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
         <hr class="border border-black mt-6">
 
         <div class="flex flex-col items-center justify-center pt-12 bg-white">
             <h1 class="text-3xl font-bold text-center mb-8">
-              Forming an irrational love between<br>clients and their buildings
+                Forming an irrational love between<br>clients and their buildings
             </h1>
             <p class="text-center text-lg">
-              Our approach starts with...<br />How do you want to make people feel?
+                Our approach starts with...<br />How do you want to make people feel?
             </p>
             <div class="flex space-x-[150px] mb-1">
                 <div class="relative">
-                    <img src="./Images/Remove-bg.png" alt="Red Building" class="h-[400px] w-auto object-cover relative z-10" />
+                    <img src="./Images/Remove-bg.png" alt="Red Building"
+                        class="h-[400px] w-auto object-cover relative z-10" />
                     <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gray-200 opacity-70"></div>
-                  </div>
-                  <div class="relative">
-                    <img src="./Images/Remove-bg2.png" alt="Red Building" class="h-[400px] w-auto object-cover relative z-10" />
+                </div>
+                <div class="relative">
+                    <img src="./Images/Remove-bg2.png" alt="Red Building"
+                        class="h-[400px] w-auto object-cover relative z-10" />
                     <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gray-200 opacity-70"></div>
-                  </div>
-                  <div class="relative">
-                    <img src="./Images/Remove-bg3.png" alt="Red Building" class="h-[400px] w-auto object-cover relative z-10" />
+                </div>
+                <div class="relative">
+                    <img src="./Images/Remove-bg3.png" alt="Red Building"
+                        class="h-[400px] w-auto object-cover relative z-10" />
                     <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gray-200 opacity-70"></div>
-                  </div>
+                </div>
             </div>
             <p class="text-center text-lg max-w-2xl mb-8 py-10">
-              In the face of changing trends and technologies,<br>
-               ARK House creates architecture that remains<br>
+                In the face of changing trends and technologies,<br>
+                ARK House creates architecture that remains<br>
                 relevant - not based on trends, fads or dates -<br>
-                 but on timeless human truths.
+                but on timeless human truths.
             </p>
 
             <div>
                 <div class="group flex border-4 border-black w-fit font-semibold">
-                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact Us</button>
+                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact
+                        Us</button>
                     <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
-                        <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 17L17 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M7 7H17V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
 
 
         <div class="my-10 sm:my-14">
@@ -341,7 +403,8 @@
             <div class="text-3xl sm:text-5xl font-semibold">Start a Project?</div>
 
             <div class="group flex border-4 border-black w-fit font-semibold">
-                <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact us</button>
+                <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact
+                    us</button>
                 <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
 
                     <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24"
