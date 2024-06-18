@@ -219,30 +219,34 @@
                 <div class="number_style font-bold m-0 p-0"><span id="counter1" data-target="3">0</span></div>
                 <div class="text-3xl sm:text-6xl font-bold text-center w-fit">Offices around <br> the world</div>
             </div>
-
+        
             <div class="h-[640px] flex flex-col justify-around">
-                <div class="group w-fit">
+                <div id="architecture_btn" class="group w-fit" onclick="changeContent('architecture')">
                     <div class="text-xl sm:text-2xl font-medium">Architecture</div>
                     <hr class="border border-black mt-2 hidden group-hover:block">
                 </div>
-                <div class="group w-fit">
+                <div id="landscape_btn" class="group w-fit" onclick="changeContent('landscape')">
                     <div class="text-xl sm:text-2xl font-medium">Landscape</div>
                     <hr class="border border-black mt-2 hidden group-hover:block">
                 </div>
-                <div class="group w-fit">
+                <div id="interior_btn" class="group w-fit" onclick="changeContent('interior')">
                     <div class="text-xl sm:text-2xl font-medium">Interior</div>
                     <hr class="border border-black mt-2 hidden group-hover:block">
                 </div>
-                <div class="group w-fit">
+                <div id="design_btn" class="group w-fit" onclick="changeContent('design')">
                     <div class="text-xl sm:text-2xl font-medium">Design</div>
                     <hr class="border border-black mt-2 hidden group-hover:block">
                 </div>
             </div>
 
             <div class="w-[560px] flex flex-col gap-5">
-                <img src="Images/architecture.png" alt="building" class="h-[640px]" />
-                <div class="text-xl">At the heart of everything we do is the human experience to feel. To love. To
-                    image. To wonder. To guide. To jest. To rule. To serve. To belong.</div>
+                <!-- <img src="/Images/architecture.png" alt="building" class="h-[640px]" /> -->
+                <div id="content-image" class="h-96 md:h-[640px] bg-cover object-cover"
+                style="background-image: url('./Images/architecture.png');">
+                </div>
+                <div id="content-text" class="text-xl">
+                    At the heart of everything we do is the human experience to feel. To love. To image. To wonder. To guide. To jest. To rule. To serve. To belong.
+                </div>
 
                 <div class="group flex border-4 border-black w-fit font-semibold">
                     <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact
@@ -285,7 +289,7 @@
 
             <div class="col-span-2">
                 <div class="h-[575px] bg-cover object-cover"
-                    style="background-image: url('/Images/UVU Classroom Building.png');">
+                    style="background-image: url('./Images/UVU Classroom Building.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">UVU Classroom Building</div>
                 <div class="text-lg">Omer, UT</div>
@@ -293,7 +297,7 @@
 
             <div class="col-span-1">
                 <div class="h-[575px] bg-cover object-cover"
-                    style="background-image: url('/Images/Thomas S. Monson Center.png');">
+                    style="background-image: url('./Images/Thomas S. Monson Center.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">UVU Classroom Building</div>
                 <div class="text-lg">Omer, UT</div>
@@ -306,7 +310,7 @@
 
             <div class="col-span-1">
                 <div class="h-[575px] bg-cover object-cover"
-                    style="background-image: url('/Images/USU Swaner Preserve and Ecocenter.png');">
+                    style="background-image: url('./Images/USU Swaner Preserve and Ecocenter.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">USU Swaner Preserve and Ecocenter</div>
                 <div class="text-lg">Logan, UT</div>
@@ -326,7 +330,7 @@
 
             <div class="col-span-1 row-span-1">
                 <div class="h-full bg-cover object-cover"
-                    style="background-image: url('/Images/UVU Fulton Library.png');">
+                    style="background-image: url('./Images/UVU Fulton Library.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">UVU Fulton Library</div>
                 <div class="text-lg">Orem, UT</div>
@@ -334,7 +338,7 @@
 
             <div class="col-start-2 col-span-4 row-span-2">
                 <div class="h-[640px] bg-cover object-cover"
-                    style="background-image: url('/Images/USU College of Agriculture.png');">
+                    style="background-image: url('./Images/USU College of Agriculture.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">USU College of Agriculture</div>
                 <div class="text-lg">Logan, UT</div>
@@ -346,7 +350,7 @@
 
             <div class="col-span-1">
                 <div class="h-[575px] bg-cover object-cover"
-                    style="background-image: url('/Images/Sugar House Monument Plaza.png');">
+                    style="background-image: url('./Images/Sugar House Monument Plaza.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">Sugar House Monument Plaza</div>
                 <div class="text-lg">Salt Lake City, UT</div>
@@ -354,7 +358,7 @@
 
             <div class="col-span-1">
                 <div class="h-[575px] bg-cover object-cover"
-                    style="background-image: url('/Images/UTA TRAX Mid-Jordan Line.png');">
+                    style="background-image: url('./Images/UTA TRAX Mid-Jordan Line.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">UTA TRAX: Mid-Jordan Line</div>
                 <div class="text-lg">Salt Lake County, UT</div>
@@ -365,7 +369,7 @@
 
             <div class="col-span-3 row-span-2">
                 <div class="h-[640px] bg-cover object-cover"
-                    style="background-image: url('/Images/Unified State Laboratory - Module 2.png');">
+                    style="background-image: url('./Images/Unified State Laboratory - Module 2.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">Unified State Laboratory - Module 2</div>
                 <div class="text-lg">Salt Lake City, UT</div>
@@ -373,7 +377,7 @@
 
             <div class="col-span-1 row-span-1">
                 <div class="h-full bg-cover object-cover"
-                    style="background-image: url('/Images/U of U Sutton Geology and Geophysics.png');">
+                    style="background-image: url('./Images/U of U Sutton Geology and Geophysics.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">U of U Sutton Geology and Geophysics</div>
                 <div class="text-lg">Salt Lake City, UT</div>
@@ -391,7 +395,7 @@
             </div>
 
             <div class="col-span-1">
-                <div class="h-[575px] bg-cover object-cover" style="background-image: url('/Images/S\ -\ Line.png');">
+                <div class="h-[575px] bg-cover object-cover" style="background-image: url('./Images/S\ -\ Line.png');">
                 </div>
                 <div class="font-medium text-xl mt-1">S - Line</div>
                 <div class="text-lg">Salt Lake City, UT</div>
