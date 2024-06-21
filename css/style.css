@@ -11,11 +11,19 @@ body {
   line-height: 0.8;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
   .number_style {
     font-size: 220px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .number_style {
+    font-size: 180px;
+  }
+}
+
+
 
 .custom-background {
   background-image: url('../Images/hero.png');

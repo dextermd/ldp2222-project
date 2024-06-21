@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav class="sticky top-0 z-20 lg:hidden flex flex-col justify-between bg-white">
+    <nav class="relative sticky top-0 z-20 lg:hidden flex flex-col justify-between bg-white">
         <div class="flex justify-between items-center">
             <div>
                 <img src="./Images/Logo_mob.svg" alt="Logo" class="h-16">
@@ -194,11 +194,11 @@
 
         <div class="my-10 sm:my-14">
 
-            <div class="flex justify-between px-0 xl:px-20">
+            <div class="flex flex-col md:flex-row justify-between px-0 xl:px-20">
                 <div class="text-3xl sm:text-5xl font-semibold">Services</div>
 
-                <div class="group flex border-4 border-black w-fit font-semibold">
-                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Discover
+                <div class="mt-4 sm:mt-0 group flex border-4 border-black w-fit font-semibold w-full sm:w-fit">
+                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3 grow sm:grow-0">Discover
                         All</button>
                     <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
 
@@ -213,39 +213,42 @@
             <hr class="border border-black mt-6">
         </div>
 
-        <div class="flex justify-between px-0 xl:px-20 gap-12">
+        <div class="flex flex-col md:flex-row justify-between px-0 xl:px-20 gap-4 sm:gap-8 md:gap-12">
 
-            <div class="flex flex-col items-center w-fit h-[640px] justify-center">
+            <div class="flex md:flex-col items-center w-fit md:h-[640px] justify-center">
                 <div class="number_style font-bold m-0 p-0"><span id="counter1" data-target="3">0</span></div>
-                <div class="text-3xl sm:text-6xl font-bold text-center w-fit">Offices around <br> the world</div>
+                <div class="ml-6 md:ml-0 text-3xl sm:text-4xl lg:text-6xl text-left font-bold md:text-center w-fit">Offices around <br class="hidden md:block"> the world</div>
             </div>
 
-            <div class="h-[640px] flex flex-col justify-around">
-                <div class="group w-fit">
+            <div class="mb-2 sm:mb-0 flex-wrap md:h-[640px] flex md:flex-col gap-4 sm:gap-0 sm:justify-between md:justify-around">
+                <div id="architecture_btn" class="group w-fit h-5 sm:h-10">
                     <div class="text-xl sm:text-2xl font-medium">Architecture</div>
-                    <hr class="border border-black mt-2 hidden group-hover:block">
+                    <hr class="border border-black sm:mt-2 hidden group-hover:block">
                 </div>
-                <div class="group w-fit">
+                <div id="landscape_btn" class="group w-fit h-5 sm:h-10">
                     <div class="text-xl sm:text-2xl font-medium">Landscape</div>
-                    <hr class="border border-black mt-2 hidden group-hover:block">
+                    <hr class="border border-black sm:mt-2 hidden group-hover:block">
                 </div>
-                <div class="group w-fit">
+                <div id="interior_btn" class="group w-fit h-5 sm:h-10">
                     <div class="text-xl sm:text-2xl font-medium">Interior</div>
-                    <hr class="border border-black mt-2 hidden group-hover:block">
+                    <hr class="border border-black sm:mt-2 hidden group-hover:block">
                 </div>
-                <div class="group w-fit">
+                <div id="design_btn" class="group w-fit h-5 sm:h-10">
                     <div class="text-xl sm:text-2xl font-medium">Design</div>
-                    <hr class="border border-black mt-2 hidden group-hover:block">
+                    <hr class="border border-black sm:mt-2 hidden group-hover:block">
                 </div>
             </div>
 
-            <div class="w-[560px] flex flex-col gap-5">
-                <img src="Images/architecture.png" alt="building" class="h-[640px]" />
-                <div class="text-xl">At the heart of everything we do is the human experience to feel. To love. To
+            <div  class="w-full md:w-[560px] flex flex-col gap-5">
+                <div id="content-image" class="h-96 md:h-[640px] bg-cover object-cover"
+                style="background-image: url('/Images/architecture.png');">
+                </div>
+
+                <div id="content-text" class="text-xl">At the heart of everything we do is the human experience to feel. To love. To
                     image. To wonder. To guide. To jest. To rule. To serve. To belong.</div>
 
-                <div class="group flex border-4 border-black w-fit font-semibold">
-                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact
+                <div class="group flex border-4 border-black w-full sm:w-fit font-semibold">
+                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3 grow sm:grow-0">Contact
                         us</button>
                     <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
 
@@ -262,11 +265,11 @@
 
         <div class="my-10 sm:my-14">
 
-            <div class="flex justify-between px-0 xl:px-20">
+            <div class="flex flex-col sm:flex-row justify-between px-0 xl:px-20">
                 <div class="text-3xl sm:text-5xl font-semibold">Recent Projects</div>
 
-                <div class="group flex border-4 border-black w-fit font-semibold">
-                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Discover
+                <div class="mt-4 sm:mt-0 group flex border-4 border-black w-full sm:w-fit font-semibold">
+                    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3 grow sm:grow-0">Discover
                         All</button>
                     <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
 
@@ -315,7 +318,7 @@
             <div class="col-span-1">
                 <div class="flex flex-col items-center w-fit h-[640px] justify-center">
                     <div class="number_style font-bold m-0 p-0"><span id="counter2" data-target="45">0</span></div>
-                    <div class="text-3xl sm:text-6xl font-bold text-center w-fit">Yeas of architecture, planning, design
+                    <div class="text-3xl lg:text-6xl font-bold text-center w-fit">Yeas of architecture, planning, design
                     </div>
                 </div>
             </div>
@@ -385,7 +388,7 @@
             <div class="col-span-1">
                 <div class="flex flex-col items-center w-fit h-[640px] justify-center">
                     <div class="number_style font-bold m-0 p-0"><span id="counter3" data-target="2.5">0.0</span></div>
-                    <div class="text-3xl sm:text-6xl font-bold text-center w-fit">With over 2.600 projects completed
+                    <div class="text-3xl lg:text-6xl font-bold text-center w-fit">With over 2.600 projects completed
                     </div>
                 </div>
             </div>
