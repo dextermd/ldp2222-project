@@ -404,11 +404,11 @@
 
        <div class="my-10 sm:my-14">
 
-                    <div class="flex justify-between px-0 xl:px-20">
+                    <div class="flex flex-col md:flex-row justify-between px-0 xl:px-20">
                         <div class="text-3xl sm:text-5xl font-semibold">Start a Project?</div>
         
-                         <div class="group flex border-4 border-black w-fit font-semibold">
-                                <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact us</button>
+                         <div class="mt-4 sm:mt-0 group flex border-4 border-black w-fit font-semibold w-full md:w-fit">
+                                <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3 grow md:grow-0">Contact us</button>
                                 <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
                         
                                     <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24"
@@ -419,22 +419,35 @@
                                 </div>
                             </div>
                     </div>
-                            <hr class="border border-black mt-6">
-                            <div class="grid grid-cols-5 gap-4 text-start mt-4 px-0 xl:pl-20">
-                                <div class="col-span-2 grid grid-rows-2">
+                    <hr class="hidden lg:block border border-black mt-6">
+                            <div class="grid grid-cols-3 md:grid-cols-5 gap-4 text-start mt-4 px-0 xl:pl-20">
+                                <div class="col-span-4 grid-rows-1 md:col-span-2 grid grid-rows-2">
                         <div class="text-2xl sm:text-4xl font-semibold">Support is available 24 hours</div>
-                    
-                        <div class="group flex border-4 border-black w-fit font-semibold h-12"> <!-- пришлось добавить высоту для кнопи -->
-                            <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3">Contact us</button>
-                            <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
-                    
-                                <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7 7H17V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                        </div>
+                        <!-- Кнопка для устройств с экраном от md и выше -->
+<div class="hidden md:flex group border-4 border-black w-fit font-semibold h-12">
+    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3 grow md:grow-0">Contact us</button>
+    <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
+        <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17L17 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 7H17V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+</div>
+
+<!-- Кнопка для устройств с экраном ниже md -->
+<div class="hidden group flex border-4 border-black w-full font-semibold h-12">
+    <button class="bg-black group-hover:bg-white text-white group-hover:text-black pl-8 pr-3 grow">Contact us</button>
+    <div class="w-10 h-10 bg-white group-hover:bg-black flex items-center justify-center">
+        <svg class="stroke-black group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17L17 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 7H17V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+</div>
+
+                       
                         </div> 
         
               
@@ -474,31 +487,57 @@
                     </div>
                 </div>
             
-        
+               
             
-            <div class="flex justify-between items-center px-0 xl:px-20">
-                <ul class="flex space-x-8 text-lg font-medium relative pt-10">
-                    <li class="relative">
-                        <span class="absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">1</span>
+            <nav class="flex justify-between items-center px-0 xl:px-20">
+
+                <ul id="menu_items" class="flex flex-col font-medium p-2 sm:hidden">
+                    <li class="flex gap-2">
+                        <div class="text-sm">1</div>
                         <a href="#about" class="hover:text-gray-700">About</a>
                     </li>
-                    <li class="relative">
-                        <span class="absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">2</span>
+                    <li class="flex gap-2">
+                        <div class="text-sm">2</div>
                         <a href="#services" class="hover:text-gray-700">Services</a>
                     </li>
-                    <li class="relative">
-                        <span class="absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">3</span>
+                    <li class="flex gap-2">
+                        <div class="text-sm">3</div>
                         <a href="#projects" class="hover:text-gray-700">Projects</a>
                     </li>
-                    <li class="relative">
-                        <span class="absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">4</span>
+                    <li class="flex gap-2">
+                        <div class="text-sm">4</div>
                         <a href="#team" class="hover:text-gray-700">Team</a>
                     </li>
-                    <li class="relative">
-                        <span class="absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">5</span>
+                    <li class="flex gap-2">
+                        <div class="text-sm">5</div>
                         <a href="#blog" class="hover:text-gray-700">Blog</a>
                     </li>
                 </ul>
+
+
+                <ul class="hidden sm:flex flex-row gap-4 text-lg font-medium relative pt-10">
+                    <li class="relative">
+                        <span class="hidden sm:block sm:absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">1</span>
+                        <a href="#about" class="hover:text-gray-700">About</a>
+                    </li>
+                    <li class="relative">
+                        <span class="hidden sm:block sm:absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">2</span>
+                        <a href="#services" class="hover:text-gray-700">Services</a>
+                    </li>
+                    <li class="relative">
+                        <span class="hidden sm:block sm:absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">3</span>
+                        <a href="#projects" class="hover:text-gray-700">Projects</a>
+                    </li>
+                    <li class="relative">
+                        <span class="hidden sm:block sm:absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">4</span>
+                        <a href="#team" class="hover:text-gray-700">Team</a>
+                    </li>
+                    <li class="relative">
+                        <span class="hidden sm:block sm:absolute top-[-20px] left-1/2 transform -translate-x-1/2 text-sm font-normal">5</span>
+                        <a href="#blog" class="hover:text-gray-700">Blog</a>
+                    </li>
+                </ul>
+             
                 <div class="flex space-x-4">
                     <a href="#" class="text-black hover:text-gray-700 transition duration-300">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -522,9 +561,9 @@
                         </svg>
                     </a>
                 </div>
-            </div>
-            <hr class="border border-black mt-6">
-            <div class="flex justify-between items-center mt-4 xl:px-20">
+            </nav>
+            <hr class="hidden lg:block border border-black mt-6">
+            <div class="flex justify-around items-center mt-4 xl:px-20 md:justify-between">
                 <p>&copy; Copyright | All Rights Reserved</p>
                 <div>
                     <a href="#Terms">Terms of Use</a> | <a href="#Privacy">Privacy</a>
@@ -534,4 +573,4 @@
     </div> 
 <script src="./js/script.js"></script>
 
-</html>
+</html> 
